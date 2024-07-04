@@ -1,0 +1,56 @@
+body {
+  background-color: #252525;
+}
+
+header {
+  height: 60px;
+}
+
+.logo {
+  height: 45px;
+  width: 45px;
+}
+
+.mg {
+    width: 400px;
+    height: 400px;
+    background-color: #9DD6A9;
+    -webkit-animation: squareToCircle 4s 2s infinite alternate;
+    position: relative;
+    top: 20%;
+    left: 40%;
+    transition: width 1s, height 1s;
+  }
+  
+  @-webkit-keyframes squareToCircle {
+      0% {
+        border-radius: 0 0 0 0;
+        background: #252525;
+        transform: rotate(0deg);
+      }
+      25% {
+        border-radius: 50% 0 0 0;
+        background: #7F9D85;
+        transform: rotate(45deg);
+      }
+      50% {
+        border-radius: 50% 50% 0 0;
+        background: #6ACE7F;
+        transform: rotate(90deg);
+      }
+      75% {
+        border-radius: 50% 50% 50% 0;
+        background: #83DD4C;
+        transform: rotate(135deg);
+      }
+      100% {
+        border-radius: 50% 50% 50% 50%;
+        background: #65E516;
+        transform: rotate(180deg);
+      }
+  }
+  
+  .mg:hover {
+    width: 600px;
+    height: 600px;
+  }
