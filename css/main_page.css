@@ -1,9 +1,9 @@
 body {
   background-color: #252525;
+  margin: 0;
 }
-
 header {
-  height: 60px;
+  width: 100%;
 }
 
 .logo {
@@ -11,15 +11,59 @@ header {
   width: 45px;
 }
 
+.logo_div {
+  margin: 0;
+  height: 60px;
+  width: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.border-gradient {
+  border: 2px solid;
+  border-image-slice: 1;
+  border-width: 2px;
+}
+.border-gradient-green-all {
+  border-image-source: linear-gradient(to top, #65E516 0%, 30%, #252525 60%);
+}
+.border-bottom {
+  border-bottom: 2px solid !important;
+  border-image-slice: 1;
+  border-bottom-width: 2px !important;
+}
+
+.border-top {
+  border-top: 2px solid !important;
+  border-image-slice: 1;
+  border-top-width: 2px !important;
+}
+
+.border-gradient-green-bottom {
+  border-image-source: linear-gradient(to right, #65E516 10%, 45%, #252525 100%) !important;
+}
+
+.border-green-top {
+  border-image-source: linear-gradient(to left, #65E516 10%, 60%, #252525 100%) !important;
+}
+
+.magic_figure_div{
+  align-items: center;
+  width: 600px;
+  height: 600px;
+  display: grid;
+}
+
 .mg {
-    width: 400px;
-    height: 400px;
+    left: 30%;
+    width: 450px;
+    height: 450px;
     background-color: #9DD6A9;
     -webkit-animation: squareToCircle 4s 2s infinite alternate;
     position: relative;
-    top: 20%;
-    left: 40%;
     transition: width 1s, height 1s;
+    grid-area: 1 / 1;
   }
   
   @-webkit-keyframes squareToCircle {
@@ -49,8 +93,96 @@ header {
         transform: rotate(180deg);
       }
   }
-  
-  .mg:hover {
-    width: 600px;
-    height: 600px;
-  }
+
+.header_footer_main {
+  height: 60px;
+  padding: 0;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.spartan_text {
+  font-family: "League Spartan", sans-serif;
+}
+
+.header_main_title {
+  font-size: 45px;
+  margin-left: 0;
+  margin-right: auto;
+  padding: 0px 10px 0px 10px;
+}
+
+.header_extra_title {
+  font-size: 30px;
+  padding-right: 10px;
+}
+.header_texts {
+  font-weight: 900;
+  color: #7AEF32;
+  text-align: center;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main_text_huge{
+  font-size: 50px;
+  margin-left: auto;
+  margin-right: 0;
+  color: white;
+  font-weight: 900;
+  text-align: right;
+  padding-right: 10px
+}
+
+.socials {
+  margin-left: 10px;
+  margin-right: auto;
+}
+.year {
+  margin-left: auto;
+  margin-right: 0px;
+  width: 200px;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  padding-right: 10px;
+}
+
+footer {
+  position: absolute;
+  bottom: 0px;
+  height: 60px;
+  width: 100%;
+  overflow: auto;
+}
+
+.template_div {
+  position: relative;
+  top: 0;
+  left: 45%;
+  grid-area: 1 / 1;
+}
+
+.template_button {
+  width: 240px;
+  height: 135px;
+  background: url(../static/bakery_page.png);
+  background-size: 240px 135px;
+  border: 1px solid #65E516;
+  transition: width 1s, height 1s, background-size 1s;
+}
+
+.magic_figure_div:hover .mg{
+  width: 475px;
+  height: 475px;
+}
+
+.magic_figure_div:hover .template_button{
+  width: 320px;
+  height: 180px;
+  background-size: 320px 180px;
+}
