@@ -1,0 +1,169 @@
+body {
+    background-color: #EAD4A9;
+}
+
+header {
+    height: 60px;
+}
+
+.header_nav {
+    background-color: #B7DBA1;
+    height: 60px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.header_categ {
+    width: 200px;
+    height: 40px;
+    border: 0px;
+    background-color: #84BB7B;
+    color: white;
+    font-weight: 200;
+    font-size: 25px;
+    margin: 0px 5px 0px 5px;
+    border-radius: 5px;
+}
+
+.days_text {
+    font-family: "Days One", sans-serif;
+}
+
+.dm_text {
+    font-family: "DM Sans", sans-serif;
+}
+
+.spartan_text {
+    font-family: "League Spartan", sans-serif;
+}
+
+.shop_name {
+    font-weight: 900;
+    font-size: 20px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0px;
+    margin-right: auto;
+    color: #4B6957;
+}
+
+.logo {
+    height: 45px;
+    width: 45px;
+}
+
+.logo_div {
+    height: 60px;
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile {
+    margin-right: 10px;
+    margin-left: auto;
+}
+
+.avatar {
+    background-color: #6A8C6B;
+    height: 45px;
+    width: 45px;
+}
+footer {
+    background-color: #B7DBA1;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.main_title {
+    font-weight: 900;
+    font-size: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+}
+
+.grid_item {
+    background-color: #F5EAD4;
+    font-weight: 900;
+    font-size: 30px;
+    height: 100%;
+    border-radius: 10px;
+    padding: 0px !important;
+    position: relative;
+}
+
+.grid_system {
+    margin-bottom: auto;
+    height: 300px;
+}
+
+main {
+    height: calc(100vh - 120px);
+}
+
+.main_div {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.item_text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.images_div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0px;
+    margin-bottom: auto;
+    padding: 1rem;
+}
+
+.image {
+    width: 100%;
+}
+
+.grid_div {
+    margin-top: 0px;
+    margin-bottom: auto;
+}
+
+.socials {
+    margin-right: auto;
+    margin-left: 10px;
+    font-weight: 900;
+}
+
+.year {
+    margin-left: auto;
+    margin-right: 10px;
+    font-weight: 900;
+}
+
+.add_cart_div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
