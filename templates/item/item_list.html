@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ru">
+  {{ template "head" }}
+  <body>
+    {{ template "header" }}
+    <main>
+      <div class="container main_div">
+        <div class="main_title spartan_text">
+            ITEMS
+        </div>
+        <div class="container px-4 grid_div">
+          <div class="row gx-3 grid_system">
+            {{ range items }}
+              {{ template "item_card" .}}
+            {{ end }}
+          </div>
+        </div>
+      </div>
+    </main>
+    {{ template "footer" }}
+  </body>
+	<script src="../js/main.js"></script>
+</html>
